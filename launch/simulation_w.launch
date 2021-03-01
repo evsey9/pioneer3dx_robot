@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- File opens Gazebo gui and starts required topics for robot control -->
+
+<launch>
+	<arg name="world_filename"/>
+	<param name="robot_description" command="xacro '$(find pioneer3dx-robot-core)/urdf/p3dx/pioneer3dx.xacro'" />
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<!-- This world already has robot position and urdf loader -->
+		<arg name="world_name" value="$(arg world_filename)" />
+		<arg name="paused" value="false" />
+		<arg name="use_sim_time" value="true" />
+		<arg name="gui" value="true" />
+		<arg name="recording" value="false" />
+		<arg name="debug" value="false" />
+	</include>
+	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+		<param name="publish_frequency" type="double" value="30.0" />
+		<param name="tf_prefix" type="string" value="p3dx" />
+	</node>
+	<node pkg="tf" type="static_transform_publisher" name="base_to_odom_r1" args="0.0 -0.0 0.0 0.0 0.0 0.0 base_link r1/odom 200" />
+	<include file="$(find robot_library)/launch/start_servers.launch" />
+</launch>
