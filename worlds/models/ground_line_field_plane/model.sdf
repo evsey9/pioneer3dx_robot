@@ -29,8 +29,8 @@
         </geometry>
         <material>
           <script>
-              <uri>model://../../catkin_ws/src/pioneer3dx_robot/worlds/models/ground_line_field_plane/materials/scripts</uri>
-              <uri>model://../../catkin_ws/src/pioneer3dx_robot/worlds/models/ground_line_field_plane/materials/textures</uri>
+              <uri>model://../../catkin_ws/src/pioneer3dx-robot-core/worlds/models/ground_line_field_plane/materials/scripts</uri>
+              <uri>model://../../catkin_ws/src/pioneer3dx-robot-core/worlds/models/ground_line_field_plane/materials/textures</uri>
             <name>GroundLineFieldPlane/Image</name>
           </script>
         </material>

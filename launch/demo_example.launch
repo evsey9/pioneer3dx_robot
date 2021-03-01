@@ -3,7 +3,7 @@
 
 
   <!-- Gazebo start -->
-  <arg name="cur_world_name" default="$(find pioneer3dx_robot)/worlds/demonstration_world.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+  <arg name="cur_world_name" default="$(find pioneer3dx-robot-core)/worlds/demonstration_world.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
 
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -11,7 +11,7 @@
   </include>
 
   <!-- Robot with diff drive -->
-  <include file="$(find pioneer3dx_robot)/launch/pioneer3dx.gazebo.launch">
+  <include file="$(find pioneer3dx-robot-core)/launch/pioneer3dx.gazebo.launch">
     <arg name="robot_name" value="r1" />
     <arg name="robot_position" value="-x 2.0 -y -5.0 -z 0.01 -R 0 -P 0 -Y 1.57" />
   </include>

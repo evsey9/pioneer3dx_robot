@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-roslaunch pioneer3dx_robot demo_example.launch
+roslaunch pioneer3dx-robot-core demo_example.launch
 

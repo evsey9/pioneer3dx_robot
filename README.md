@@ -33,7 +33,7 @@
 Для запуска полигона и необходимого окружения
 необходимо выполнить sh скрипт:
 ```
-sh ~/catkin_ws/src/pioneer3dx_robot/sh/launch_example.sh
+sh ~/catkin_ws/src/pioneer3dx-robot-core/sh/launch_example.sh
 ```
 После некоторого времени на экране будет изображен робот в 
 виртуальной среде. Примерно как на картинке ниже:
@@ -60,22 +60,22 @@ sh ~/catkin_ws/src/pioneer3dx_robot/sh/launch_example.sh
 Сейчас имеются несколько примеров работы:
  - Пример работы с камерой. Вывод изображения на экран.
 ```
-python ~/catkin_ws/src/pioneer3dx_robot/scripts/camera_looking_example.py
+python ~/catkin_ws/src/pioneer3dx-robot-core/scripts/camera_looking_example.py
 ```
 
  - Пример работы с камерой. Движение по линии.
 ```
-python ~/catkin_ws/src/pioneer3dx_robot/scripts/camera_example.py
+python ~/catkin_ws/src/pioneer3dx-robot-core/scripts/camera_example.py
 ```
 
  - Пример работы с лазером. Объезд препятствий.
 ```
-python ~/catkin_ws/src/pioneer3dx_robot/scripts/laser_example.py
+python ~/catkin_ws/src/pioneer3dx-robot-core/scripts/laser_example.py
 ```
 
  - Пример работы с экнодерами и ориетацией робота.
 ```
-python ~/catkin_ws/src/pioneer3dx_robot/scripts/square_movement_example.py
+python ~/catkin_ws/src/pioneer3dx-robot-core/scripts/square_movement_example.py
 ```
 
 

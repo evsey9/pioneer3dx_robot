@@ -88,7 +88,7 @@ source ~/.bashrc
 рекомендуется выполнить следующие команды:
 ```
 cd ~/catkin_ws/src/
-git clone https://github.com/hircumg/pioneer3dx_robot.git
+git clone https://github.com/hircumg/pioneer3dx-robot-core.git
 git clone https://github.com/hircumg/robot_library.git
 cd ..
 catkin_make
